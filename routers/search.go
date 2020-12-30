@@ -20,6 +20,7 @@ type PageDataStructure struct {
 	ShopeeResults     []*controllers.ShopeeDataStructure
 	AmazonResults     []*controllers.AmazonDataStructure
 	CarousellResults  []*controllers.CarousellDataStructure
+	AlibabaCNResults  []*controllers.AlibabaCNDataStructure
 	TotalResultsFound int
 	MessageRender     string
 }
@@ -29,17 +30,13 @@ var (
 	shopeeListing    []*controllers.ShopeeDataStructure
 	amazonListing    []*controllers.AmazonDataStructure
 	carousellListing []*controllers.CarousellDataStructure
+	alibabacnListing []*controllers.AlibabaCNDataStructure
 	msgData          string
 	totalFound       int
 )
 
+// MarketplaceSearchIndexPage = Marketplace Search index page function
 func MarketplaceSearchIndexPage(w http.ResponseWriter, r *http.Request) {
-	// a, b, c := controllers.GetTaoBaoInfo("a")
-	// x := PageDataStructure{
-	// 	TaoBaoResults:     a,
-	// 	TotalResultsFound: b,
-	// 	MessageRender:     c,
-	// }
 	if r.Method == "POST" {
 		submitVal := r.FormValue("submit")
 		if submitVal == "submit-search" {
@@ -52,21 +49,31 @@ func MarketplaceSearchIndexPage(w http.ResponseWriter, r *http.Request) {
 					shopeeListing = nil
 					amazonListing = nil
 					carousellListing = nil
+					alibabacnListing = nil
 				case "shopee-mrkplc":
 					shopeeListing, totalFound, msgData = controllers.GetShopeeInfo(searchContent)
 					taobaoListing = nil
 					amazonListing = nil
 					carousellListing = nil
+					alibabacnListing = nil
 				case "amazon-mrkplc":
 					amazonListing, totalFound, msgData = controllers.GetAmazonInfo(searchContent)
 					taobaoListing = nil
 					shopeeListing = nil
 					carousellListing = nil
+					alibabacnListing = nil
 				case "carousell-mrkplc":
 					carousellListing, totalFound, msgData = controllers.GetCarousellInfo(searchContent)
 					taobaoListing = nil
 					shopeeListing = nil
 					amazonListing = nil
+					alibabacnListing = nil
+				case "alibaba-mrkplc":
+					alibabacnListing, totalFound, msgData = controllers.GetAlibabaCNInfo(searchContent)
+					taobaoListing = nil
+					shopeeListing = nil
+					amazonListing = nil
+					carousellListing = nil
 				}
 			} else {
 				msgData = "Please Key Some Keywords instead of Blank..."
@@ -81,6 +88,7 @@ func MarketplaceSearchIndexPage(w http.ResponseWriter, r *http.Request) {
 		ShopeeResults:     shopeeListing,
 		AmazonResults:     amazonListing,
 		CarousellResults:  carousellListing,
+		AlibabaCNResults:  alibabacnListing,
 		TotalResultsFound: totalFound,
 		MessageRender:     msgData,
 	}

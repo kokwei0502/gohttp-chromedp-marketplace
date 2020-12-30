@@ -25,7 +25,7 @@ var (
 	shopeeBaseURL  = "https://shopee.sg"
 	shopeeURL      = "https://shopee.sg/search?keyword="
 	shopeePageURL  = "&page="
-	pageNumber     = 2
+	pageNumber     = 1
 	shopeeMsg      string
 	nodeShopeeMain []*cdp.Node
 	totalShopee    int

@@ -63,6 +63,8 @@
       {{template "amazonHTML" .}}
       {{else if .CarousellResults}}
       {{template "carousellHTML" .}}
+      {{else if .AlibabaCNResults}}
+      {{template "alibabacnHTML" .}}
       {{end}}
     </section>
   </body>

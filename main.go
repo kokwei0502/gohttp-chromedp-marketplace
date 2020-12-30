@@ -16,6 +16,7 @@ func main() {
 	// controllers.GetShopeeInfo("被单")
 	// controllers.GetAmazonInfo("dell laptop")
 	// controllers.GetCarousellInfo("asus laptop")
+	// controllers.GetAlibabaCNInfo("被单")
 	fs := http.FileServer(http.Dir("./static"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 	http.HandleFunc("/", routers.MarketplaceSearchIndexPage)
