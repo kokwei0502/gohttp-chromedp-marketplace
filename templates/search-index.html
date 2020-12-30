@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <link rel="stylesheet" href="../static/css/results.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="search-section">
+      <form action="" method="post" class="search-form">
+        <div class="search-container">
+          <label for="search-content">Search Keywords : </label>
+          <input type="text" name="search-content" id="search-content" />
+        </div>
+        <div class="marketplace-choices">
+          <label for="taobao-mrkplc"
+            ><input type="radio" name="search-platform" id="taobao-mrkplc" value="taobao-mrkplc" /><span
+              class="checked-span"
+            ></span
+            ><span class="chinese-title">淘宝网</span><br /><span>TAOBAO.COM</span></label
+          >
+          <label for="shopee-mrkplc"
+            ><input type="radio" name="search-platform" id="shopee-mrkplc" value="shopee-mrkplc" /><span
+              class="checked-span"
+            ></span
+            ><span class="chinese-title">虾皮网</span><br /><span>SHOPEE.COM</span></label
+          >
+          <label for="amazon-mrkplc"
+            ><input type="radio" name="search-platform" id="amazon-mrkplc" value="amazon-mrkplc" /><span
+              class="checked-span"
+            ></span
+            ><span class="chinese-title">亚马逊</span><br /><span>AMAZON.COM</span></label
+          >
+          <label for="carousell-mrkplc"
+            ><input type="radio" name="search-platform" id="carousell-mrkplc" value="carousell-mrkplc" /><span
+              class="checked-span"
+            ></span
+            ><span class="chinese-title">旋转拍卖</span><br /><span>CAROUSELL.COM</span></label
+          >
+          <label for="alibaba-mrkplc"
+            ><input type="radio" name="search-platform" id="alibaba-mrkplc" value="alibaba-mrkplc" /><span
+              class="checked-span"
+            ></span
+            ><span class="chinese-title">阿里巴巴</span><br /><span>ALIBABA.COM</span></label
+          >
+        </div>
+        <div class="submit-container">
+          <button type="submit" name="submit" value="submit-search">SEARCH</button>
+        </div>
+        <div class="message-container">
+          {{if .MessageRender}}
+          <span class="message">{{.MessageRender}}</span>
+          {{end}}
+        </div>
+      </form>
+    </section>
+    <section class="search-results-section">
+      {{if .ShopeeResults}}
+      {{template "shopeeHTML" .}}
+      {{else if .AmazonResults}}
+      {{template "amazonHTML" .}}
+      {{else if .CarousellResults}}
+      {{template "carousellHTML" .}}
+      {{end}}
+    </section>
+  </body>
+</html>

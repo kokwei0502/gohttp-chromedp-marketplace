@@ -1,0 +1,22 @@
+{{define "amazonHTML"}}
+{{$totalresult := .TotalResultsFound}}
+{{$result := .AmazonResults}}
+<form action="" method="post">
+<div class="product-list">
+  <div class="results">
+    <span></span>
+  </div>
+ 
+  {{range $k, $v := .AmazonResults}}
+  <div class="product">
+    <img src="{{$v.Image}}" alt="">
+    <h3 class="title">{{$v.Title}}</h3>
+    <p class="link"><span class="sub-title">Link : </span><span class="sub-result"><a href="{{$v.Link}}">Click Me For More...</a></span></p>
+    <p class="price"><span class="sub-title">Price : </span><span class="sub-result">{{$v.Price}}</span></p>
+    <p><button type="submit" name="submit" value="{{$k}}">Add Favourite</button></p>
+  </div>
+  {{end}}
+
+</div>
+</form>
+{{end}}

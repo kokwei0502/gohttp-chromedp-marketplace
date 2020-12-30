@@ -1,0 +1,67 @@
+[1226/215803.874:ERROR:file_io_win.cc(162)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner570592095\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1226/215803.874:ERROR:file_io_win.cc(171)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner570592095\Crashpad\reports\0a58a66f-f51b-4959-b403-89b3aae02dcf.dmp: The system cannot find the path specified. (0x3)
+[1226/215803.875:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1226/215843.702:ERROR:file_io_win.cc(162)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner388345087\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1226/215843.703:ERROR:file_io_win.cc(171)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner388345087\Crashpad\reports\c2e8ce81-d7bd-4e23-bb97-11b20ebcbf92.dmp: The system cannot find the path specified. (0x3)
+[1226/215843.704:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1226/215910.707:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1226/215910.708:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1226/215910.708:ERROR:exception_snapshot_win.cc(99)] thread ID 11644 not found in process
+[1226/215910.710:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1226/215910.855:ERROR:file_io_win.cc(162)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner437777675\Crashpad\settings.dat: The system cannot find the file specified. (0x2)
+[1226/220000.507:ERROR:file_io_win.cc(162)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner944250759\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1226/220000.508:ERROR:file_io_win.cc(171)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner944250759\Crashpad\reports\71d72014-31f8-4179-9163-76f2e6ffa4f8.dmp: The system cannot find the path specified. (0x3)
+[1226/220000.508:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1226/220117.637:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1226/220117.638:ERROR:exception_snapshot_win.cc(99)] thread ID 15420 not found in process
+[1226/220117.867:ERROR:file_io_win.cc(162)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner132917495\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1226/220117.867:ERROR:file_io_win.cc(171)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner132917495\Crashpad\reports\05708079-077f-4f28-9ac0-a2ce026cee89.dmp: The system cannot find the path specified. (0x3)
+[1226/220117.868:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1226/220141.946:ERROR:file_io_win.cc(162)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner124813303\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1226/220141.947:ERROR:file_io_win.cc(171)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner124813303\Crashpad\reports\ccfaefd7-d872-4d4e-a9dc-9f5d9f29fd98.dmp: The system cannot find the path specified. (0x3)
+[1226/220141.947:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1226/220200.386:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1226/220200.387:ERROR:exception_snapshot_win.cc(99)] thread ID 15840 not found in process
+[1226/220200.392:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1226/220200.402:ERROR:file_io_win.cc(171)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner026367487\Crashpad\reports\98cce93e-a188-4295-b4ad-65946b4a78cd.dmp: The system cannot find the path specified. (0x3)
+[1226/220200.402:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1226/220321.058:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1226/220321.067:ERROR:file_io_win.cc(162)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner137399955\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1226/220321.068:ERROR:file_io_win.cc(171)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner137399955\Crashpad\reports\ed051c65-65ac-4965-b3f2-b08e67aae2dd.dmp: The system cannot find the path specified. (0x3)
+[1226/220321.068:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1226/220354.463:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1226/220354.464:ERROR:exception_snapshot_win.cc(99)] thread ID 11932 not found in process
+[1226/220354.477:ERROR:file_io_win.cc(162)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner648033231\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1226/220354.478:ERROR:file_io_win.cc(171)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner648033231\Crashpad\reports\617dbc4e-b9bc-4a38-9a88-d2ad3890d6a5.dmp: The system cannot find the path specified. (0x3)
+[1226/220354.478:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1226/220542.985:ERROR:file_io_win.cc(162)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner673605863\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1226/220542.986:ERROR:file_io_win.cc(171)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner673605863\Crashpad\reports\1c34cc31-2869-4323-a764-0ebd1cf1a6c0.dmp: The system cannot find the path specified. (0x3)
+[1226/220542.986:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1226/221247.517:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1226/221247.518:ERROR:exception_snapshot_win.cc(99)] thread ID 10360 not found in process
+[1226/221247.518:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1226/231433.363:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[1226/231433.383:ERROR:file_io_win.cc(162)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner138700351\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1226/231433.384:ERROR:file_io_win.cc(171)] CreateFile C:\Users\KHONGK~1\AppData\Local\Temp\chromedp-runner138700351\Crashpad\reports\56d7d021-a9f0-48ac-a61f-8e90407da814.dmp: The system cannot find the path specified. (0x3)
+[1226/231433.384:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
+[1227/203318.850:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/152732.172:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/153240.960:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/153457.905:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/203158.160:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/204441.311:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/205024.296:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/210528.528:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/210601.045:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/211116.582:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/215355.488:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/215448.088:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/215646.814:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1228/215803.324:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1229/114934.982:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1229/115119.045:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1229/194905.445:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1229/200325.894:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1229/204529.062:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1230/111958.251:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1230/143256.272:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
