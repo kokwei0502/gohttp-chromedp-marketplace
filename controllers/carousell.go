@@ -92,11 +92,6 @@ func GetCarousellInfo(search string) (resultListing []*CarousellDataStructure, t
 			carousellMsg = fmt.Sprintf("Completed Scrape Data from Carousell")
 			return carousellListItems, totalCarousell, carousellMsg
 		}
-		// if len(nodeCarousellMain) > 0 {
-		// testnum = totalCarousell
-		// totalCarousell += len(nodeCarousellMain)
-		// fmt.Println(testnum, totalCarousell)
-
 		var nodeCarousellNext []*cdp.Node
 		if totalCarousell < 300 {
 			if err := chromedp.Run(ctx,
@@ -118,10 +113,6 @@ func GetCarousellInfo(search string) (resultListing []*CarousellDataStructure, t
 			}
 		}
 	}
-	// } else {
-	// 	break
-	// }
-	// }
 	fmt.Println(len(carousellListItems))
 	fmt.Println(totalCarousell)
 	carousellMsg = fmt.Sprintf("Completed Scrape Data from Carousell")
@@ -158,60 +149,5 @@ func scrollCarousellAllElements() chromedp.Tasks {
 			return nil
 		}),
 		chromedp.Sleep(500 * time.Millisecond),
-		// chromedp.ActionFunc(func(ctx context.Context) error {
-		// 	_, exp, err := runtime.Evaluate(`window.scrollTo({top: 0,behavior: 'smooth',});`).Do(ctx)
-		// 	if err != nil {
-		// 		return err
-		// 	}
-		// 	if exp != nil {
-		// 		return exp
-		// 	}
-		// 	return nil
-		// }),
-		// chromedp.Sleep(500 * time.Millisecond),
-
-		// chromedp.ActionFunc(func(ctx context.Context) error {
-		// 	_, exp, err := runtime.Evaluate(`window.scrollTo(0,window.innerHeight*2.5);`).Do(ctx)
-		// 	if err != nil {
-		// 		return err
-		// 	}
-		// 	if exp != nil {
-		// 		return exp
-		// 	}
-		// 	return nil
-		// }),
-		// chromedp.Sleep(500 * time.Millisecond),
-		// chromedp.ActionFunc(func(ctx context.Context) error {
-		// 	_, exp, err := runtime.Evaluate(`window.scrollTo(0,window.innerHeight*3.5);`).Do(ctx)
-		// 	if err != nil {
-		// 		return err
-		// 	}
-		// 	if exp != nil {
-		// 		return exp
-		// 	}
-		// 	return nil
-		// }),
-		// chromedp.Sleep(500 * time.Millisecond),
-		// chromedp.ActionFunc(func(ctx context.Context) error {
-		// 	_, exp, err := runtime.Evaluate(`window.scrollTo(0,window.innerHeight*4.5);`).Do(ctx)
-		// 	if err != nil {
-		// 		return err
-		// 	}
-		// 	if exp != nil {
-		// 		return exp
-		// 	}
-		// 	return nil
-		// }),
-		// chromedp.Sleep(500 * time.Millisecond),
-		// chromedp.ActionFunc(func(ctx context.Context) error {
-		// 	_, exp, err := runtime.Evaluate(`window.scrollTo(0,document.body.scrollHeight);`).Do(ctx)
-		// 	if err != nil {
-		// 		return err
-		// 	}
-		// 	if exp != nil {
-		// 		return exp
-		// 	}
-		// 	return nil
-		// }),
 	}
 }
