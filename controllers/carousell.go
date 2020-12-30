@@ -29,6 +29,7 @@ var (
 	nodeCarousellMain []*cdp.Node
 )
 
+// GetCarousellInfo = Retrieve Carousell basic product info
 func GetCarousellInfo(search string) (resultListing []*CarousellDataStructure, total int, msg string) {
 	var carousellListItems []*CarousellDataStructure
 	searchContent := strings.ReplaceAll(search, " ", "%20")

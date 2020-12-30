@@ -29,6 +29,7 @@ var (
 	amazonListitems []*AmazonDataStructure
 )
 
+// GetAmazonInfo = Retrieve Amazon basic product info
 func GetAmazonInfo(search string) (resultListing []*AmazonDataStructure, total int, msg string) {
 	searchContent := strings.ReplaceAll(search, " ", "+")
 	amazonURL = amazonURL + searchContent

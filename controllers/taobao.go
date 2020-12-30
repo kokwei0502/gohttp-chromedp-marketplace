@@ -19,6 +19,7 @@ type taobaoConfig struct {
 	Password  string `json:"Password"`
 }
 
+// TaobaoDataStructure = Taobao data structure
 type TaobaoDataStructure struct {
 	Title string
 	Image string

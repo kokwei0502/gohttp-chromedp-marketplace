@@ -10,6 +10,7 @@ import (
 	"github.com/chromedp/chromedp/kb"
 )
 
+// ShopeeDetailsInfo =
 type ShopeeDetailsInfo struct {
 	ImageList []string
 }
@@ -19,6 +20,7 @@ var (
 	nodeShopeeDImage []*cdp.Node
 )
 
+// GetShopeeDetailsInfo = Retrieve Shopee product detail info
 func GetShopeeDetailsInfo(url string) {
 	options := []chromedp.ExecAllocatorOption{
 		chromedp.Flag("headless", false),
