@@ -8,7 +8,6 @@ import (
 	"time"
 
 	"github.com/chromedp/cdproto/cdp"
-	"github.com/chromedp/cdproto/runtime"
 	"github.com/chromedp/chromedp"
 )
 
@@ -81,12 +80,6 @@ func GetShopeeInfo(search string) (resultListing []*ShopeeDataStructure, total i
 		}
 		if len(nodeShopeeMain) > 0 {
 			totalShopee += len(nodeShopeeMain)
-			// if err := chromedp.Run(ctx,
-			// 	scrollAllElements(),
-			// ); err != nil {
-			// 	shopeeMsg = fmt.Sprintf("Error Occured : %v", err)
-			// 	return shopeeListItems, totalShopee, shopeeMsg
-			// }
 			for i := 0; i < len(nodeShopeeMain); i++ {
 				if err := chromedp.Run(ctx,
 					chromedp.ScrollIntoView(`div[data-sqe="name"]`, chromedp.ByQuery, chromedp.FromNode(nodeShopeeMain[i])),
@@ -168,44 +161,6 @@ var (
 func shopeeCheckElements(opts ...func(*chromedp.Selector)) chromedp.Tasks {
 	return chromedp.Tasks{
 		chromedp.Nodes(`a[data-sqe="link"]`, &nodeShopeeLink, opts...),
-		// chromedp.Sleep(500 * time.Millisecond),
-	}
-}
-
-func scrollAllElements() chromedp.Tasks {
-	return chromedp.Tasks{
-		chromedp.ActionFunc(func(ctx context.Context) error {
-			_, exp, err := runtime.Evaluate(`window.scrollTo(0,document.body.scrollHeight/3);`).Do(ctx)
-			if err != nil {
-				return err
-			}
-			if exp != nil {
-				return exp
-			}
-			return nil
-		}),
-		chromedp.Sleep(500 * time.Millisecond),
-		chromedp.ActionFunc(func(ctx context.Context) error {
-			_, exp, err := runtime.Evaluate(`window.scrollTo(0,document.body.scrollHeight/2);`).Do(ctx)
-			if err != nil {
-				return err
-			}
-			if exp != nil {
-				return exp
-			}
-			return nil
-		}),
-		chromedp.Sleep(500 * time.Millisecond),
-		chromedp.ActionFunc(func(ctx context.Context) error {
-			_, exp, err := runtime.Evaluate(`window.scrollTo(0,document.body.scrollHeight+600);`).Do(ctx)
-			if err != nil {
-				return err
-			}
-			if exp != nil {
-				return exp
-			}
-			return nil
-		}),
 	}
 }
 
